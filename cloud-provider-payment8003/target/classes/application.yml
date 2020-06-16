@@ -1,0 +1,18 @@
+server:
+  port: 8003
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.106.183.183:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 520000ww
+  cloud:
+    zookeeper:
+      connect-string: 47.106.183.183:2181
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.syf.springcloud.entities
